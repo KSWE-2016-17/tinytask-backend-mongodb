@@ -1,0 +1,9 @@
+#!/bin/bash
+
+chown -R mongodb:mongodb /data
+gosu mongodb mongod --fork --logpath /data/mongo.log
+
+[ -x /mongodb-init-db.sh ] \
+    && /mongodb-init-db.sh \
+    && chmod -x /mongodb-init-db.sh
+exec tail -f /dev/null

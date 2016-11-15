@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+    mongodb:
+        image: tinytaskbackendmongodb
+        container_name: tinytaskbackendmongodb_mongodb_1
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "27017:27017"
