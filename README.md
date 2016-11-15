@@ -44,5 +44,3 @@ point.
 But bear in mind:
 
 - Bind the container's port `27017` to reach the MongoDB instance.
-- Mount a volume for the `dumps` directory to `/dumps` directory,
-    so that the container is able to import the database dumps (if wanted).
