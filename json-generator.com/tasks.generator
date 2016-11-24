@@ -1,0 +1,18 @@
+[
+  '{{repeat(10, 10)}}',
+  {
+    _id: '{{objectId()}}',
+    createdBy: '{{random("58372443be5b5576960311cf","58372443578226d8dd3191b2","58372443541e2f78b1fc7e45","58372443bcbc81d7ff75a1d4","58372443d79cda357ee7c61e","583724431e0b7db89f3d5b3c","58372443c2f9016e51121076","5837244354c1b3e438366c70","58372443c9acf1083f507fef","58372443b4049c9af8d1dcd3")}}',
+    assignedTo: '{{random("58372443be5b5576960311cf","58372443578226d8dd3191b2","58372443541e2f78b1fc7e45","58372443bcbc81d7ff75a1d4","58372443d79cda357ee7c61e","583724431e0b7db89f3d5b3c","58372443c2f9016e51121076","5837244354c1b3e438366c70","58372443c9acf1083f507fef","58372443b4049c9af8d1dcd3")}}',
+    name: '{{lorem(5, "words")}}',
+    description: '{{lorem()}}',
+    payment: '{{integer(1, 5)}}',
+    position: {
+      latitude: '{{floating(0.0, 90.0)}}',
+      longitude: '{{floating(0.0, 90.0)}}'
+    },
+    starts: '{{date()}}',
+    category: '{{lorem(1, "words")}}'
+  }
+]
+

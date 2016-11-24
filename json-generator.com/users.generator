@@ -1,0 +1,11 @@
+[
+  '{{repeat(10, 10)}}',
+  {
+    _id: '{{objectId()}}',
+    email: '{{email()}}',
+    displayName: '{{firstName()}} {{surname()}}',
+    picture: '',
+    address: '{{street()}}, {{city()}}'
+  }
+]
+
